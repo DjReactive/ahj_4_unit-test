@@ -6,7 +6,7 @@ export const banks = {
   ms: 'maestro',
   mc: 'mastercard',
   vi: 'visa',
-  mi: 'mir'
+  mi: 'mir',
 };
 
 export default class Banking {
@@ -46,7 +46,7 @@ export default class Banking {
         }
       case 6:
         switch (Number(value[1])) {
-          //case 2: China UnionPay
+          // case 2: China UnionPay
           case 0: return banks.mc;
           case 3:
           case 7: return banks.ms;
