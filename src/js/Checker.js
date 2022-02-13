@@ -30,10 +30,9 @@ export default class Checker {
     let nCheck = 0;
     let bEven = false;
     const nValue = value.replace(/\D/g, '');
-    for (let nDigit, cDigit, multiple, n = nValue.length - 1; n >= 0; n--) {
+    for (let nDigit, cDigit, n = nValue.length - 1; n >= 0; n--) {
       cDigit = nValue.charAt(n);
       nDigit = parseInt(cDigit, 10);
-      multiple = nDigit * 2;
       if (bEven) {
         nDigit *= 2;
         if (nDigit > 9) nDigit -= 9;
