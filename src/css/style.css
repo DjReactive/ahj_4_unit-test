@@ -1,0 +1,37 @@
+body {
+    color: #999;
+}
+.card_image {
+  width: 40px;
+  opacity: 0.8;
+  border: 3px solid #fff;
+  /* gray filter */
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: gray; /* IE 6-9 */
+}
+.colorize {
+  opacity: 1;
+  -webkit-filter: none;
+  -moz-filter: none;
+  -ms-filter: none;
+  -o-filter: none;
+  filter: none;
+  filter: none; /* IE 6-9 */
+  border: 3px solid #000;
+}
+.message {
+  display: none;
+  color: red;
+}
+.error {
+  color: red;
+  display: block;
+}
+.succefull {
+  color: green;
+  display: block;
+}
